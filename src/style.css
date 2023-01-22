@@ -1,7 +1,7 @@
 :root {
-  --primary-color: #b2dff5;
-  --secondary-color: #ede7e5;
-  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  --primary-color: #000000;
+  --secondary-color: #ffffff;
+  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 .container {
   text-align: start;
@@ -11,7 +11,7 @@
 h1,
 h2,
 h3 {
-  text-align: start;
+  text-align: center;
   margin-top: 30px;
 }
 h1 {
@@ -41,22 +41,32 @@ h3 {
 .primary-link {
   border: 1px solid var(--primary-color);
   background-color: var(--primary-color);
-  border-radius: 4px;
+  border-radius: 7px;
   box-shadow: var(--box-shadow);
-  padding: 20px 15px;
+  padding: 20px 21px;
   margin-right: 20px;
   text-decoration: none;
   color: white;
+}
+.primary-link:hover {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  transition: ease-in-out 0.2s;
 }
 .secondary-link {
   border: 1px solid var(--primary-color);
   background-color: white;
   color: var(--primary-color);
   text-decoration: none;
-  border-radius: 4px;
+  border-radius: 7px;
   box-shadow: var(--box-shadow);
   padding: 20px 15px;
   margin-left: 20px;
+}
+.secondary-link:hover {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  transition: ease-in-out 0.2s;
 }
 .homepage-link {
   color: var(--primary-color);
@@ -86,9 +96,9 @@ h3 {
 }
 .main-link {
   text-decoration: none;
-  color: white;
-  background: var(--primary-color);
-  border-radius: 4px;
+  color: black;
+  background: var(--secondary-color);
+  border-radius: 7px;
   box-shadow: var(--box-shadow);
   padding: 20px 15px;
   margin-right: 20px;
@@ -119,9 +129,4 @@ h3 {
     text-align: center;
     margin: 0 20px;
   }
-}
-.img-style {
-  border-style: solid;
-  border-width: 12px;
-  border-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%) 1;
 }

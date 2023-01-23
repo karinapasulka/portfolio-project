@@ -20,6 +20,12 @@
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Playfair+Display:wght@400;700;900&family=Poppins:wght@100;400;500;700&family=Righteous&family=Roboto:wght@100;400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="/src/style.css" />
   </head>
   <body>
@@ -64,24 +70,18 @@
         </div>
       </div>
     </nav>
-    <div class="container">
-      <h1>Karina Pasulka</h1>
-      <h3>🇺🇦 Front-end developer, based in Europe</h3>
-      <div class="info-section">
+    <div class="container header">
+      <h3 class="intro">Hi, I am</h3>
+      <h1 class="name">Karina Pasulka</h1>
+      <h3 class="intro2">Junior front-end developer, based in Europe.</h3>
+      <div class="home-section">
         <a
-          href="/about.html"
+          href="/index.html#project"
           target="_blank"
           class="primary-link"
-          title="Info and contact page"
+          title="Home page"
         >
-          About me
-        </a>
-        <a
-          href="/about.html#contact"
-          target="_blank"
-          class="secondary-link"
-          title="Contact details"
-          >Contact me
+          Get Started
         </a>
       </div>
     </div>
@@ -96,7 +96,7 @@
           />
         </div>
         <div class="col-md-6 p-3 project-info">
-          <h2 class="mb-3 project-title">World Clock App</h2>
+          <h2 class="mb-3 project-title" id="project">World Clock App</h2>
           <p>
             This is an application designated to show you the time of the
             selected cities in different parts of the world. There are 3 default

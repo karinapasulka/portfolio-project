@@ -2,7 +2,7 @@
   --primary-color: #494949;
   --secondary-color: #ffffff;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-  --font-family: "Poppins";
+  --font-family: "Poppins", sans-serif;
 }
 .container {
   text-align: start;
@@ -12,19 +12,26 @@
 .header {
   margin-top: 70px;
   margin-bottom: 70px;
+  background-color: black;
 
-  background-color: #faf6e9;
-  width: 100%;
   padding-top: 80px;
   padding-bottom: 80px;
 }
-h1,
+.full-width {
+  width: 100vw;
+  position: relative;
+}
+
 h2,
 h3 {
   text-align: center;
+  color: var(--primary-color);
 }
 h1 {
+  color: var(--primary-color);
   font-size: 96px;
+  text-align: center;
+  font-family: "DM Serif Display", serif;
   font-style: normal;
   font-weight: 700;
   font-size: 96px;
@@ -36,32 +43,40 @@ h1 {
     line-height: 1.5;
   }
 }
+.name {
+  color: var(--secondary-color);
+}
 h2 {
   font-size: 48px;
-  font-family: "Poppins", sans-serif;
+  font-family: "DM Serif Display", serif;
 }
 h3 {
   font-size: 24px;
-  font-family: "Poppins", sans-serif;
-  opacity: 0.7;
+  font-family: var(--font-family);
 }
 
-h3 .intro {
-  padding-top: 100;
-}
-h3 .intro2 {
-  padding-bottom: 50px;
-}
 p {
-  font-family: "Poppins", sans-serif;
+  font-family: var(--font-family);
 }
 a {
-  font-family: "Poppins", sans-serif;
+  font-family: var(--font-family);
+}
+.my-image {
+  padding-top: 60px;
+}
+
+.intro {
+  padding-top: 40px;
+  font-size: 24px;
+  font-family: "DM Serif Display", serif;
+}
+.intro2 {
+  opacity: 0.6;
 }
 .home-section {
   text-transform: capitalize;
   text-align: center;
-  padding-top: 40px;
+  padding-top: 50px;
   padding-bottom: 60px;
 }
 .primary-link {
@@ -116,11 +131,17 @@ a {
   margin-right: 20px;
   border: 1px solid var(--primary-color);
 }
+.main-link:hover {
+  background-color: #494949;
+  color: #ffffff;
+  transition: ease-in-out 0.2s;
+}
 .project-info {
   text-align: start;
 }
 .project-title {
   text-align: start;
+  color: var(--primary-color);
 }
 @media (max-width: 576px) {
   .project-img {
@@ -141,7 +162,38 @@ a {
     text-align: center;
     margin: 0 20px;
   }
+  .my-image {
+    display: none;
+  }
+  .container-inquiry {
+    display: table-cell;
+    margin: 20px;
+    margin-bottom: 10px;
+  }
+  .talk-link {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  .inquiry {
+    text-align: center;
+    font-size: 32px;
+  }
+  .talk-info {
+    display: none;
+  }
 }
-.navbar-nav {
-  color: rebeccapurple;
+.container-inquiry {
+  padding: 35px;
+  border-radius: 6px;
+  border: 1px solid var(--primary-color);
+  margin-bottom: 35px;
+  color: var(--primary-color);
+}
+.inquiry {
+  text-align: start;
+  margin-bottom: 0;
+}
+.talk-link {
+  display: grid;
+  justify-content: flex-end;
 }

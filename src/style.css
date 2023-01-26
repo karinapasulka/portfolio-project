@@ -13,7 +13,6 @@
   margin-top: 70px;
   margin-bottom: 70px;
   background-color: black;
-
   padding-top: 80px;
   padding-bottom: 80px;
 }
@@ -31,7 +30,7 @@ h1 {
   color: var(--primary-color);
   font-size: 96px;
   text-align: center;
-  font-family: "DM Serif Display", serif;
+  font-family: var(--font-family);
   font-style: normal;
   font-weight: 700;
   font-size: 96px;
@@ -48,7 +47,7 @@ h1 {
 }
 h2 {
   font-size: 48px;
-  font-family: "DM Serif Display", serif;
+  font-family: var(--font-family);
 }
 h3 {
   font-size: 24px;
@@ -67,11 +66,14 @@ a {
 
 .intro {
   padding-top: 40px;
-  font-size: 24px;
-  font-family: "DM Serif Display", serif;
+  font-size: 39px;
+  color: #7c7b7b;
+  font-family: var(--font-family);
 }
 .intro2 {
-  opacity: 0.6;
+  opacity: 0.9;
+  font-size: 25px;
+  color: #7c7b7b;
 }
 .home-section {
   text-transform: capitalize;

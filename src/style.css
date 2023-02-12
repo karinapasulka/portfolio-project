@@ -10,6 +10,9 @@
   margin-top: 60px;
   margin-bottom: 30px;
 }
+.container-project {
+  padding: 0 120px;
+}
 .header {
   margin-top: 70px;
   margin-bottom: 70px;
@@ -27,6 +30,9 @@ h3 {
   text-align: center;
   color: var(--primary-color);
 }
+.h3-homepage {
+  padding: 60px;
+}
 h1 {
   color: var(--primary-color);
   font-size: 96px;
@@ -37,12 +43,13 @@ h1 {
   font-size: 96px;
   line-height: 128px;
 }
-@media (max-width: 576px) {
-  h1 {
-    font-size: 48px;
-    line-height: 1.5;
-  }
+p {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.5;
+  opacity: 0.8;
 }
+
 .name {
   color: var(--secondary-color);
 }
@@ -61,10 +68,15 @@ p {
 a {
   font-family: var(--font-family);
 }
+.project-spacing {
+  padding: 120px 60px;
+}
 .my-image {
   padding-top: 60px;
 }
-
+.project-img {
+  width: 550px;
+}
 .intro {
   padding-top: 40px;
   font-size: 39px;
@@ -145,38 +157,8 @@ a {
   text-align: start;
   color: var(--primary-color);
 }
-@media (max-width: 576px) {
-  .project-info {
-    text-align: center;
-  }
-  .project-title {
-    text-align: center;
-  }
-  h2 {
-    text-align: center;
-    font-size: 32px;
-  }
-  .main-link {
-    display: block;
-    text-align: center;
-    margin: 0 20px;
-  }
-
-  .container-inquiry {
-    display: table-cell;
-    margin: 20px;
-    margin-bottom: 10px;
-  }
-  .talk-link {
-    text-align: center;
-  }
-  .inquiry {
-    text-align: center;
-    font-size: 32px;
-  }
-  .talk-info {
-    display: none;
-  }
+.project-description {
+  padding: 120px 60px;
 }
 .container-inquiry {
   padding: 35px;
@@ -193,4 +175,76 @@ a {
   display: grid;
   justify-content: flex-end;
   text-transform: capitalize;
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 48px;
+    line-height: 1.5;
+  }
+  .project-info {
+    text-align: center;
+  }
+  .project-title {
+    text-align: center;
+  }
+  h2 {
+    text-align: center;
+    font-size: 32px;
+  }
+  .main-link {
+    display: block;
+    text-align: center;
+    margin: 0 10px;
+  }
+
+  .container-inquiry {
+    display: table-cell;
+    margin: 20px;
+    margin-bottom: 25px;
+  }
+  .talk-link {
+    text-align: center;
+  }
+  .inquiry {
+    text-align: center;
+    font-size: 32px;
+  }
+  .talk-info {
+    display: none;
+  }
+}
+@media (max-width: 990px) {
+  .h3-homepage {
+    padding: 10px 10px;
+  }
+  .project-spacing {
+    padding: 50px 30px;
+  }
+  .project-info {
+    text-align: center;
+  }
+  .project-title {
+    text-align: center;
+  }
+  h2 {
+    text-align: center;
+    font-size: 36px;
+  }
+  .main-link {
+    display: block;
+    text-align: center;
+    margin: 0 10px;
+  }
+
+  .talk-link {
+    text-align: center;
+  }
+  .inquiry {
+    text-align: center;
+    font-size: 32px;
+  }
+  .talk-info {
+    display: none;
+  }
 }

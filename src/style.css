@@ -35,7 +35,7 @@ h1 {
   font-size: 96px;
   line-height: 128px;
 }
-.h1-about {
+.h1-content {
   color: var(--secondary-color);
   font-size: 48px;
   line-height: normal;
@@ -51,7 +51,7 @@ h2 {
   font-size: 48px;
   font-family: var(--font-family);
 }
-.h2-about {
+.h2-content {
   font-size: 45px;
   line-height: normal;
   font-weight: 550;
@@ -66,7 +66,7 @@ h3 {
 .h3-homepage {
   padding: 55px;
 }
-.h3-about {
+.h3-content {
   font-size: 30px;
   text-align: start;
   margin-bottom: 25px;
@@ -78,7 +78,7 @@ p {
   opacity: 0.8;
   font-family: var(--font-family);
 }
-.p-about {
+.p-content {
   line-height: 2;
   margin-bottom: 60px;
   font-size: 17px;
@@ -104,13 +104,17 @@ a {
 .about-img {
   border: 35px solid #f5f5f5;
 }
+.center-img {
+  display: block;
+  margin: 0 auto;
+}
 .intro {
   padding-top: 40px;
   font-size: 39px;
   color: #7c7b7b;
   font-family: var(--font-family);
 }
-.intro2 {
+.h3-intro {
   opacity: 0.9;
   font-size: 25px;
   color: #7c7b7b;
@@ -154,7 +158,7 @@ a {
   text-align: center;
   margin-bottom: 20px;
 }
-.info-about {
+.content-container {
   text-align: start;
 }
 .contact {
@@ -190,18 +194,19 @@ a {
 .project-description {
   padding: 120px 60px;
 }
-.container-inquiry {
+.inquiry-container {
   padding: 35px;
   border-radius: 6px;
   border: 1px solid var(--primary-color);
   margin-bottom: 35px;
+  background-color: #f5f5f5;
   color: var(--primary-color);
 }
 .inquiry {
   text-align: start;
   margin-bottom: 0;
 }
-.talk-link {
+.job-link {
   display: grid;
   justify-content: flex-end;
   text-transform: capitalize;
@@ -212,7 +217,7 @@ a {
     font-size: 48px;
     line-height: 1.5;
   }
-  .h1-about {
+  .h1-content {
     font-size: 26px;
   }
   .project-info {
@@ -225,13 +230,13 @@ a {
     text-align: center;
     font-size: 32px;
   }
-  .h2-about {
+  .h2-content {
     font-size: 28px;
   }
-  .h3-about {
+  .h3-content {
     font-size: 20px;
   }
-  .p-about {
+  .p-content {
     font-size: 15px;
   }
   .main-link {
@@ -240,19 +245,19 @@ a {
     margin: 0 10px;
   }
 
-  .container-inquiry {
+  .inquiry-container {
     display: table-cell;
     margin: 20px;
     margin-bottom: 25px;
   }
-  .talk-link {
+  .job-link {
     text-align: center;
   }
   .inquiry {
     text-align: center;
     font-size: 32px;
   }
-  .talk-info {
+  .job-info {
     display: none;
   }
 }
@@ -279,27 +284,24 @@ a {
     margin: 0 10px;
   }
 
-  .talk-link {
+  .job-link {
     text-align: center;
   }
   .inquiry {
     text-align: center;
     font-size: 32px;
   }
-  .talk-info {
+  .job-info {
     display: none;
   }
-  .about-img {
-    display: block;
-    margin: 0 auto;
-  }
-  .h2-about {
+
+  .h2-content {
     text-align: center;
   }
-  .h3-about {
+  .h3-content {
     text-align: center;
   }
-  .p-about {
+  .p-content {
     text-align: center;
     line-height: 1.5;
   }

@@ -148,7 +148,14 @@ a {
   text-align: center;
 }
 .contact:hover {
-  text-decoration: underline;
+  text-decoration: none;
+  color: #7c7b7b;
+}
+.grow {
+  transition: all 0.3s ease-in-out;
+}
+.grow:hover {
+  transform: scale(1.4);
 }
 .start-link {
   background-color: var(--primary-color);
@@ -185,6 +192,13 @@ a {
   text-transform: capitalize;
   border: 1px solid #494949;
   float: right;
+}
+
+footer .social-links a {
+  margin: 0 20px;
+  padding: 10px;
+  font-size: 20px;
+  color: #7c7b7b;
 }
 .my-image {
   padding-top: 60px;

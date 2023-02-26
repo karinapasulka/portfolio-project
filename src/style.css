@@ -179,14 +179,13 @@ a {
   border-radius: 7px;
   border: 1px solid #7c7b7b;
   padding: 20px 15px;
-  transition: all 0.3s ease 0s;
+  transition: all 0.3s ease-in-out;
   cursor: pointer;
 }
 .main-link:hover {
   background-color: #494949;
   color: #ffffff;
   transition: ease-in-out 0.2s;
-  transform: translateY(-7px);
 }
 .job-link {
   text-transform: capitalize;

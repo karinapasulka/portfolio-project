@@ -38,7 +38,7 @@ nav {
 }
 .intro {
   padding-top: 40px;
-  font-size: 39px;
+  font-size: 40px;
   color: #7c7b7b;
   font-family: var(--font-family);
 }
@@ -48,14 +48,15 @@ h1 {
   text-align: center;
   font-family: var(--font-family);
   font-style: normal;
-  font-weight: 700;
+  font-weight: 250;
   font-size: 96px;
-  line-height: 128px;
+  line-height: 57px;
 }
 .h1-content {
   color: var(--secondary-color);
   font-size: 48px;
-  line-height: normal;
+  font-weight: 200;
+  line-height: 80px;
 }
 
 h2,
@@ -71,12 +72,13 @@ h2 {
 .h2-content {
   font-size: 45px;
   line-height: normal;
-  font-weight: 550;
+  font-weight: 250;
   text-align: start;
   margin-bottom: 20px;
 }
 h3 {
   font-size: 24px;
+  font-weight: 400;
   font-family: var(--font-family);
 }
 .h3-content {
@@ -86,9 +88,9 @@ h3 {
 }
 p {
   font-size: 17px;
-  font-weight: normal;
+  font-weight: 350;
   line-height: 1.5;
-  opacity: 0.8;
+  opacity: 0.9;
   font-family: var(--font-family);
 }
 .p-content {
@@ -97,6 +99,7 @@ p {
 }
 a {
   font-family: var(--font-family);
+  font-weight: 300;
 }
 .project-spacing {
   padding: 120px 60px;
@@ -126,6 +129,7 @@ a {
 }
 .project-title {
   text-align: start;
+  font-weight: 350;
 }
 .project-description {
   padding: 120px 60px;
@@ -140,6 +144,7 @@ a {
 .inquiry {
   text-align: start;
   margin-bottom: 0;
+  font-weight: 400;
 }
 .contact {
   color: var(--primary-color);
@@ -148,7 +153,7 @@ a {
   text-align: center;
 }
 .contact:hover {
-  text-decoration: none;
+  text-decoration: underline;
   color: #7c7b7b;
 }
 .grow {
@@ -196,8 +201,8 @@ a {
 footer .social-links a {
   margin: 0 20px;
   padding: 10px;
-  font-size: 20px;
-  color: #7c7b7b;
+  font-size: 27px;
+  color: var(--primary-color);
 }
 .my-image {
   padding-top: 60px;
@@ -212,52 +217,7 @@ footer .social-links a {
   display: block;
   margin: 0 auto;
 }
-@media (max-width: 576px) {
-  h1 {
-    font-size: 48px;
-    line-height: 1.5;
-  }
-  .h1-content {
-    font-size: 26px;
-  }
-  .project-info {
-    text-align: center;
-  }
-  h2 {
-    text-align: center;
-    font-size: 32px;
-  }
-  .h2-content {
-    font-size: 28px;
-  }
-  .h3-content {
-    font-size: 20px;
-  }
-  .p-content {
-    font-size: 15px;
-  }
-  .main-link {
-    display: block;
-    text-align: center;
-    margin: 0 10px;
-  }
-  .inquiry-container {
-    display: table-cell;
-    margin: 20px;
-    margin-bottom: 25px;
-  }
-  .job-link {
-    text-align: center;
-  }
-  .inquiry {
-    text-align: center;
-    font-size: 32px;
-  }
-  .job-info {
-    display: none;
-    font-size: 14px;
-  }
-}
+
 @media (max-width: 990px) {
   .h3-homepage {
     padding: 10px 10px;
@@ -290,6 +250,9 @@ footer .social-links a {
   .job-info {
     display: none;
   }
+  .h1-content {
+    line-height: 61px;
+  }
   .h2-content {
     text-align: center;
   }
@@ -299,5 +262,60 @@ footer .social-links a {
   .p-content {
     text-align: center;
     line-height: 1.5;
+  }
+}
+@media (max-width: 576px) {
+  h1 {
+    font-size: 48px;
+    line-height: 36px;
+  }
+  .h1-content {
+    font-size: 26px;
+    line-height: 36px;
+  }
+  .project-info {
+    text-align: center;
+  }
+  .intro {
+    font-size: 28px;
+  }
+  h2 {
+    text-align: center;
+    font-size: 32px;
+  }
+  .h2-content {
+    font-size: 28px;
+  }
+  h3 {
+    font-weight: 300;
+  }
+  .h3-content {
+    font-size: 20px;
+  }
+  .h3-intro {
+    font-size: 18px;
+  }
+  .p-content {
+    font-size: 15px;
+  }
+  .main-link {
+    display: block;
+    text-align: center;
+    margin: 0 10px;
+  }
+  .inquiry-container {
+    display: table-cell;
+    margin: 20px;
+    margin-bottom: 25px;
+  }
+  .job-link {
+    text-align: center;
+  }
+  .inquiry {
+    text-align: center;
+    font-size: 32px;
+  }
+  .job-info {
+    display: none;
   }
 }

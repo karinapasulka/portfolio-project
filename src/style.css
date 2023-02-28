@@ -100,6 +100,7 @@ p {
 .p-footer {
   font-weight: 300;
 }
+
 a {
   font-family: var(--font-family);
   font-weight: 350;
@@ -150,15 +151,18 @@ a {
   font-weight: 400;
 }
 .contact {
-  color: var(--primary-color);
+  color: black;
+  font-weight: 350;
   font-size: 18px;
   text-decoration: none;
   text-align: center;
 }
+
 .contact:hover {
   text-decoration: underline;
   color: #7c7b7b;
 }
+
 .grow {
   transition: all 0.3s ease-in-out;
 }
@@ -299,6 +303,9 @@ footer .social-links a {
     font-size: 18px;
   }
   .p-content {
+    font-size: 15px;
+  }
+  .contact {
     font-size: 15px;
   }
   .main-link {

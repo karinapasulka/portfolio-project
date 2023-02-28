@@ -88,18 +88,21 @@ h3 {
 }
 p {
   font-size: 17px;
-  font-weight: 350;
   line-height: 1.5;
-  opacity: 0.9;
+  opacity: 0.8;
+  font-weight: 400;
   font-family: var(--font-family);
 }
 .p-content {
   line-height: 2;
   margin-bottom: 60px;
 }
+.p-footer {
+  font-weight: 300;
+}
 a {
   font-family: var(--font-family);
-  font-weight: 300;
+  font-weight: 350;
 }
 .project-spacing {
   padding: 120px 60px;

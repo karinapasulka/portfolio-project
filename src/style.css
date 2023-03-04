@@ -36,7 +36,7 @@ nav {
   width: 100vw;
   position: relative;
 }
-.intro {
+header h1 {
   padding-top: 40px;
   font-size: 40px;
   color: #7c7b7b;
@@ -52,7 +52,8 @@ h1 {
   font-size: 96px;
   line-height: 57px;
 }
-.h1-content {
+.h1-content,
+.h2-intro {
   color: var(--secondary-color);
   font-size: 48px;
   font-weight: 200;
@@ -81,11 +82,16 @@ h3 {
   font-weight: 400;
   font-family: var(--font-family);
 }
+.h3-homepage {
+  font-weight: 300;
+  font-size: 30px;
+}
 .h3-content {
   font-size: 30px;
   text-align: start;
   margin-bottom: 25px;
 }
+
 p {
   font-size: 17px;
   line-height: 1.5;
@@ -108,7 +114,7 @@ a {
 .project-spacing {
   padding: 120px 60px;
 }
-.h3-intro {
+header h3 {
   opacity: 0.9;
   font-size: 25px;
   color: #7c7b7b;
@@ -228,6 +234,7 @@ footer .social-links a {
 @media (max-width: 990px) {
   .h3-homepage {
     padding: 10px 10px;
+    font-size: 25px;
   }
   .project-spacing {
     padding: 50px 30px;
@@ -257,7 +264,8 @@ footer .social-links a {
   .job-info {
     display: none;
   }
-  .h1-content {
+  .h1-content,
+  .h2-intro {
     line-height: 61px;
   }
   .h2-content {
@@ -272,18 +280,26 @@ footer .social-links a {
   }
 }
 @media (max-width: 576px) {
+  .container {
+    margin-top: 0px;
+    padding-top: 0px;
+  }
+  .project-spacing {
+    padding-top: 5px;
+  }
   h1 {
     font-size: 48px;
     line-height: 36px;
   }
-  .h1-content {
+  .h1-content,
+  .h2-intro {
     font-size: 26px;
     line-height: 36px;
   }
   .project-info {
     text-align: center;
   }
-  .intro {
+  header h1 {
     font-size: 28px;
   }
   h2 {
@@ -299,8 +315,12 @@ footer .social-links a {
   .h3-content {
     font-size: 20px;
   }
-  .h3-intro {
+  header h3 {
     font-size: 18px;
+  }
+  .h3-homepage {
+    margin: 5px 5px;
+    font-size: 25px;
   }
   .p-content {
     font-size: 15px;
